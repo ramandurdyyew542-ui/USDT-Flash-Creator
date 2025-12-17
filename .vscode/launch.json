@@ -5,6 +5,28 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "args": [
+                "task"
+            ],
+            "name": "Gulp task",
+            "program": "${workspaceFolder}/node_modules/gulp/bin/gulp.js",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
+        },
+        {
+            "name": "Electron Main",
+            "program": "${workspaceFolder}/main.js",
+            "request": "launch",
+            "runtimeExecutable": "electron",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
+        },
+        {
             "name": "Python Debugger: Current File",
             "type": "debugpy",
             "request": "launch",
